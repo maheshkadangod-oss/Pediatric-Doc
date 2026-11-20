@@ -74,3 +74,44 @@ Shoot this one for real with the doctor. AI video of a real doctor talking will 
 
 1. The hero image must sit inside an arch. Keep the doctor's head in the top third, centred, with space above.
 2. Use the same person for IMG-01 and IMG-02. In AI tools, generate IMG-01 first, then upload it as a reference for IMG-02.
+
+---
+
+## Scroll effects
+
+### Already built into `index.html` (no work needed)
+
+| Where | What happens as you scroll |
+|---|---|
+| Whole page | Smooth, weighted scrolling on desktop (Lenis). Phones keep normal scroll. |
+| Opening | Short loader draws a ring, then slides up. Hero headline rises in line by line. |
+| Top menu | Hides when you scroll down, comes back when you scroll up. |
+| Every heading | Lines slide up from behind a mask as they enter the screen. |
+| Every photo | Starts slightly zoomed in, settles to normal size as it appears. |
+| Philosophy paragraph | Words light up one by one as you scroll through it. |
+| Numbers | Count up from zero when they come into view. |
+| Surgery day section | Steps highlight one at a time, a progress bar fills along the top. |
+| Right edge | A dotted "stitch" line draws down the page as you read. |
+| Buttons (mouse only) | Pull slightly towards the cursor. |
+
+Anyone with "reduce motion" switched on in their phone or computer settings gets a still version. Keep it that way. Some parents reading this site are anxious, and motion can make that worse.
+
+### Three upgrades worth adding later
+
+Paste each one into Claude Code with the site open. Do them one at a time and check the result before the next.
+
+**1. Hero photo drifts inside the arch**
+
+> In index.html, make the hero image inside the arch move up slightly slower than the page as I scroll, a gentle parallax of about 60px over the first screen. Desktop only, off when prefers-reduced-motion is set. Don't add a new library.
+
+**2. Ward video plays with the scroll** (needs VID-01)
+
+> In index.html, add a full-width section after the philosophy paragraph that stays pinned for about one and a half screens of scrolling. Inside it, play assets/vid-01-loop.mp4 so the video's frames move forward and back with the scroll, like scrubbing. Fade in one line of text over it: "The ward is quiet by 9 pm. I still check in." Use the existing image slot placeholder if the video file is missing. Desktop only, phones get the poster image.
+
+**3. Treatments slide sideways**
+
+> In index.html, turn the "What I treat" list into a horizontal row of cards that slides left as I scroll down, while the section stays pinned. Each card uses one image slot. Phones keep the normal vertical list.
+
+### What not to add
+
+Spinning 3D objects, cursor trails, sound, or anything that hides the phone number. A parent at 11 pm with a child in pain wants the number and the hospital name in two seconds. Every effect has to pass that test.
