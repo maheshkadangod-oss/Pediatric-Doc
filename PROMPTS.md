@@ -4,9 +4,9 @@ Save each file in an `assets/` folder next to `index.html`, with the exact filen
 
 Works in Google AI Studio (Imagen / Veo), Midjourney, or any image/video tool.
 
-**Style line to paste at the end of every image prompt, so the set looks like one shoot:**
+**Style line to paste at the end of every image prompt, so the set looks like one shoot.** This is what makes the site read premium. Skip it and the photos will look like stock.
 
-> Warm natural window light, soft cream and pale sky-blue palette with small touches of coral and mustard yellow, shot on 50mm lens, shallow depth of field, gentle film grain, editorial healthcare photography, calm and reassuring mood, no text, no logos.
+> Soft natural window light, muted ivory, warm stone and deep navy palette with one small terracotta accent, shot on medium format 80mm lens, shallow depth of field, fine film grain, quiet luxury editorial photography in the style of a premium hospitality magazine, calm and reassuring, generous negative space, no bright primary colours, no text, no logos.
 
 ---
 
@@ -18,12 +18,12 @@ Works in Google AI Studio (Imagen / Veo), Midjourney, or any image/video tool.
 ## IMG-02 · About portrait
 `assets/img-02-portrait.jpg` · portrait 4:5 · 1600 × 2000 px
 
-> Waist-up portrait of the same South Indian female paediatric surgeon, early 40s, in a crisp white coat over navy scrubs, arms relaxed, a calm half smile, looking into the camera. Plain warm cream wall behind her, slight window light from the left. Confident, kind, approachable. Clean negative space on the right.
+> Waist-up portrait of the same South Indian female paediatric surgeon, early 40s, in a crisp white coat over navy scrubs, arms relaxed, a calm half smile, looking into the camera. Plain warm ivory wall behind her, slight window light from the left. Confident, kind, approachable. Clean negative space on the right.
 
 ## IMG-03 · Clinic interior
 `assets/img-03-clinic.jpg` · square 1:1 · 1200 × 1200 px
 
-> A bright, modern children's clinic waiting area. Low rounded seating in cream and sage green, a small play corner with wooden toys, illustrated animals on a pale blue wall, large window with soft daylight. Clean, premium, not cluttered. No people.
+> A calm, high-end children's clinic waiting area. Low rounded seating in ivory boucle, a small play corner with natural wooden toys, a single arched alcove in warm stone, one terracotta cushion, large window with soft daylight. Clean, premium, not cluttered. No people.
 
 ## IMG-04 · Recovery moment (also the video poster)
 `assets/img-04-recovery.jpg` · landscape 16:9 · 1920 × 1080 px
@@ -67,3 +67,10 @@ Shoot this one for real with the doctor. AI video of a real doctor talking will 
 9:16 · 30 seconds · animation
 
 > Soft 2D paper-cut animation in cream, coral, sky blue and mustard. A small child character with a teddy walks through four scenes: a doctor's room with drawings on the wall, a bedtime scene with a storybook, a calm operating room with a friendly masked doctor waving, and home on a sofa with a parent and a blanket. Gentle camera pans between scenes, warm and reassuring, no text.
+
+---
+
+## Two rules for the photos
+
+1. The hero image must sit inside an arch. Keep the doctor's head in the top third, centred, with space above.
+2. Use the same person for IMG-01 and IMG-02. In AI tools, generate IMG-01 first, then upload it as a reference for IMG-02.

@@ -5,437 +5,524 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dr. Asha Varma · Paediatric Surgeon, Kochi</title>
 <meta name="description" content="Paediatric and neonatal surgeon in Kochi. Keyhole surgery for babies and children, with parents kept informed at every step.">
+<meta name="theme-color" content="#F7F3EC">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..700,0..100,0..1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,200..600,0..100,0..1;1,9..144,200..600,0..100,0..1&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#FBF6EE; --paper-2:#F4EBDD; --ink:#1B2A41; --ink-soft:#4A5872;
-  --coral:#EE6F57; --sun:#F5C04E; --sage:#93C29C; --sky:#A8D2E6; --blush:#F6D3C8;
-  --line:rgba(27,42,65,.12);
-  --r-lg:36px; --r-md:22px;
-  --serif:"Fraunces", Georgia, serif; --sans:"Plus Jakarta Sans", system-ui, sans-serif;
-  --gutter:clamp(16px,5vw,72px);
+  --ivory:#F7F3EC; --stone:#EDE6DA; --sand:#DCD1C0;
+  --ink:#14202E; --ink-2:#5A6472; --ink-3:#8A919B;
+  --accent:#C4613F; --accent-soft:#E9C9B8;
+  --line:rgba(20,32,46,.12); --line-l:rgba(247,243,236,.16);
+  --serif:"Fraunces", Georgia, serif; --sans:"Instrument Sans", system-ui, sans-serif;
+  --g:clamp(20px,5vw,80px);
+  --ease:cubic-bezier(.16,1,.3,1);
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;overflow-x:clip}
-body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.35;mix-blend-mode:multiply;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.12 0 0 0 0 0.2 0 0 0 .08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-img{display:block;max-width:100%}
-a{color:inherit}
-.wrap{max-width:1240px;margin:0 auto;padding:0 var(--gutter);position:relative}
-h1,h2,h3{font-family:var(--serif);font-weight:400;font-variation-settings:"SOFT" 100,"WONK" 0;letter-spacing:-.02em;line-height:1.02}
-h1{font-size:clamp(46px,7.4vw,108px)}
-h2{font-size:clamp(36px,5vw,68px)}
-h3{font-size:clamp(22px,2.2vw,28px);line-height:1.15}
-em{font-style:italic;font-variation-settings:"SOFT" 100,"WONK" 1;color:var(--coral)}
-.eyebrow{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--ink-soft);display:inline-flex;align-items:center;gap:10px}
-.eyebrow::before{content:"";width:22px;height:2px;background:var(--coral);border-radius:2px}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:0;cursor:pointer;font-family:var(--sans);transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s,background .25s}
-.btn-primary{background:var(--ink);color:var(--paper);box-shadow:0 10px 30px -10px rgba(27,42,65,.5)}
-.btn-primary:hover{transform:translateY(-2px);background:#0F1B2E}
-.btn-ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
-.btn-ghost:hover{background:var(--ink);color:var(--paper)}
-.btn .arr{transition:transform .25s}
-.btn:hover .arr{transform:translateX(4px)}
+html{overflow-x:clip}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+body{background:var(--ivory);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.7;overflow-x:clip;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:90;opacity:.5;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .08 0 0 0 0 .12 0 0 0 0 .18 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+::selection{background:var(--accent);color:var(--ivory)}
+img,video{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1360px;margin:0 auto;padding:0 var(--g);position:relative}
 
-/* Image slots: real image if present, styled placeholder if not */
-.slot{position:relative;overflow:hidden;background:linear-gradient(140deg,var(--sky),var(--blush) 60%,var(--sun))}
-.slot img,.slot video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.slot .tag{position:absolute;left:14px;bottom:14px;z-index:2;font-size:11px;letter-spacing:.08em;font-weight:600;background:rgba(251,246,238,.9);padding:6px 10px;border-radius:999px;color:var(--ink)}
-.slot.loaded .tag{display:none}
+h1,h2,h3,.serif{font-family:var(--serif);font-weight:300;font-variation-settings:"SOFT" 50,"WONK" 0,"opsz" 144;letter-spacing:-.03em;line-height:.98}
+h1{font-size:clamp(54px,9.6vw,156px)}
+h2{font-size:clamp(40px,5.6vw,88px)}
+h3{font-size:clamp(24px,2.3vw,34px);line-height:1.1;letter-spacing:-.02em}
+i,em{font-style:italic;font-variation-settings:"SOFT" 100,"WONK" 1,"opsz" 144}
+.accent{color:var(--accent)}
+.label{font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:500;color:var(--ink-2)}
+.idx{font-family:var(--serif);font-style:italic;font-size:15px;color:var(--accent);margin-right:14px;letter-spacing:0}
+
+/* Line-by-line reveal */
+.l{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
+.l>span{display:block;transform:translateY(110%);transition:transform 1.3s var(--ease)}
+.l.in>span{transform:none}
+.l:nth-child(2)>span{transition-delay:.08s}.l:nth-child(3)>span{transition-delay:.16s}
+.fade{opacity:0;transform:translateY(24px);transition:opacity 1.2s var(--ease),transform 1.2s var(--ease)}
+.fade.in{opacity:1;transform:none}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:14px;padding:18px 30px;border-radius:999px;font:500 15px/1 var(--sans);letter-spacing:.01em;border:0;cursor:pointer;transition:background .5s var(--ease),color .5s var(--ease),transform .4s var(--ease);will-change:transform}
+.btn-dark{background:var(--ink);color:var(--ivory)}
+.btn-dark:hover{background:var(--accent)}
+.btn .circ{width:26px;height:26px;border-radius:50%;background:var(--ivory);color:var(--ink);display:grid;place-items:center;font-size:13px;transition:transform .5s var(--ease)}
+.btn:hover .circ{transform:rotate(-45deg)}
+.link{position:relative;font-weight:500;font-size:15px;padding-bottom:4px;display:inline-flex;gap:10px;align-items:center}
+.link::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform-origin:right;transition:transform .6s var(--ease)}
+.link:hover::after{transform:scaleX(0)}
+
+/* Image slots: real file if present, refined tonal placeholder if not */
+.slot{position:relative;overflow:hidden;background:radial-gradient(120% 80% at 30% 20%,#E8DFD1 0%,#CDBFAB 55%,#B3A28B 100%)}
+.slot::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 22px,rgba(255,255,255,.06) 22px 23px)}
+.slot img,.slot video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.08);transition:transform 1.8s var(--ease)}
+.in .slot img,.slot.in img{transform:scale(1)}
+.slot .tag{position:absolute;left:16px;bottom:16px;z-index:2;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(20,32,46,.65)}
+.slot.loaded .tag,.slot.loaded::before{display:none}
+
+/* LOADER */
+.loader{position:fixed;inset:0;z-index:200;background:var(--ivory);display:grid;place-items:center;transition:transform 1.1s var(--ease) .1s}
+.loader.done{transform:translateY(-100%)}
+.loader svg{width:84px;height:84px}
+.loader circle{fill:none;stroke:var(--accent);stroke-width:1.5;stroke-dasharray:4 5}
+.loader .ring{stroke-dasharray:252;stroke-dashoffset:252;stroke:var(--ink);stroke-width:1;animation:draw 1.2s var(--ease) forwards}
+.loader text{font-family:var(--serif);font-style:italic;font-size:30px;fill:var(--ink)}
+@keyframes draw{to{stroke-dashoffset:0}}
 
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .3s,box-shadow .3s}
-nav.scrolled{background:rgba(251,246,238,.86);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
-.nav-in{display:flex;align-items:center;justify-content:space-between;height:78px}
-.logo{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:var(--serif);font-size:22px}
-.logo-mark{width:38px;height:38px;border-radius:50% 50% 50% 12px;background:var(--coral);display:grid;place-items:center;color:var(--paper);font-size:18px;font-style:italic}
-.nav-links{display:flex;gap:34px;list-style:none;font-size:15px;font-weight:500}
-.nav-links a{text-decoration:none;position:relative}
-.nav-links a::after{content:"";position:absolute;left:0;bottom:-4px;height:2px;width:0;background:var(--coral);transition:width .3s}
-.nav-links a:hover::after{width:100%}
-.nav-cta{padding:12px 20px}
-.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer}
-.burger span{display:block;height:2px;width:24px;background:var(--ink);margin:6px auto;transition:.3s}
+nav{position:fixed;inset:0 0 auto 0;z-index:60;transition:transform .6s var(--ease),background .4s}
+nav.hide{transform:translateY(-100%)}
+nav.solid{background:rgba(247,243,236,.82);backdrop-filter:blur(16px) saturate(1.2);border-bottom:1px solid var(--line)}
+.nav-in{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:84px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand svg{width:34px;height:34px;flex:none}
+.brand b{font-family:var(--serif);font-weight:400;font-size:21px;letter-spacing:-.01em;display:block;line-height:1}
+.brand small{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.menu{display:flex;gap:40px;list-style:none;font-size:14.5px}
+.menu a{position:relative;color:var(--ink-2);transition:color .3s}
+.menu a:hover{color:var(--ink)}
+.nav-r{justify-self:end;display:flex;align-items:center;gap:26px}
+.nav-r .tel{font-size:14px;color:var(--ink-2)}
+.nav-r .btn{padding:13px 22px}
+.burger{display:none;background:none;border:0;cursor:pointer;font:500 13px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--ink)}
 
-/* STITCH LINE */
-.stitch{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0}
+/* STITCH */
+.stitch{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;clip-path:inset(0 0 100% 0)}
 .stitch path{fill:none;vector-effect:non-scaling-stroke}
-.stitch{clip-path:inset(0 0 100% 0)}
 
 /* HERO */
-.hero{padding:150px 0 90px;position:relative;overflow-x:clip}
-.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
-.hero h1{margin:22px 0 28px}
-.hero p.lead{font-size:20px;color:var(--ink-soft);max-width:520px}
-.hero-actions{display:flex;gap:14px;margin-top:38px;flex-wrap:wrap}
-.hero-visual{position:relative;aspect-ratio:4/5}
-.hero-visual .slot{position:absolute;inset:0;border-radius:48% 52% 44% 56% / 38% 40% 60% 62%;box-shadow:0 40px 80px -30px rgba(27,42,65,.35)}
-.sticker{position:absolute;z-index:3;background:var(--paper);border-radius:20px;padding:14px 18px;box-shadow:0 14px 40px -12px rgba(27,42,65,.3);font-size:14px;display:flex;gap:12px;align-items:center;animation:bob 6s ease-in-out infinite}
-.sticker b{font-family:var(--serif);font-size:26px;font-weight:500;display:block;line-height:1}
-.sticker .dot{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;flex:none}
-.s1{left:-34px;top:16%}.s2{right:-20px;bottom:12%;animation-delay:-3s}
-.blob{position:absolute;border-radius:50%;z-index:-1}
-.b1{width:180px;height:180px;background:var(--sun);right:-40px;top:-30px;border-radius:60% 40% 55% 45%}
-.b2{width:110px;height:110px;background:var(--sage);left:10%;bottom:-30px;border-radius:40% 60% 45% 55%}
-@keyframes bob{50%{transform:translateY(-10px) rotate(-1deg)}}
+.hero{min-height:100svh;padding:150px 0 0;display:flex;flex-direction:column;position:relative;z-index:1}
+.hero>.wrap{width:100%}
+.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:5vw;align-items:end;flex:1}
+.hero .label{display:flex;gap:16px;align-items:center;margin-bottom:40px}
+.hero .label::before{content:"";width:40px;height:1px;background:var(--ink)}
+.hero h1{margin-bottom:46px}
+.hero-sub{display:grid;grid-template-columns:minmax(0,440px) auto;gap:50px;align-items:end;padding-bottom:70px}
+.hero-sub p{font-size:19px;color:var(--ink-2);line-height:1.6}
+.hero-cta{display:flex;flex-direction:column;gap:22px;align-items:flex-start}
+.arch{position:relative;aspect-ratio:3/4.3;margin-bottom:70px}
+.arch .slot{position:absolute;inset:0;border-radius:999px 999px 6px 6px}
+.arch figcaption{position:absolute;left:0;right:0;bottom:-44px;font-size:12.5px;color:var(--ink-3);display:flex;justify-content:space-between}
+.seal{position:absolute;left:-64px;top:20%;width:128px;height:128px;z-index:3;animation:spin 30s linear infinite}
+.seal text{font:500 9.6px var(--sans);letter-spacing:.32em;text-transform:uppercase;fill:var(--ink)}
+.seal-c{position:absolute;left:-64px;top:20%;width:128px;height:128px;z-index:4;display:grid;place-items:center}
+.seal-c span{width:62px;height:62px;border-radius:50%;background:var(--accent);color:var(--ivory);display:grid;place-items:center;font-family:var(--serif);font-style:italic;font-size:26px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+.fact{padding:28px 0;display:flex;gap:18px;align-items:baseline}
+.fact+.fact{padding-left:32px;border-left:1px solid var(--line)}
+.fact b{font-family:var(--serif);font-weight:300;font-size:40px;letter-spacing:-.03em;line-height:1}
+.fact span{font-size:14px;color:var(--ink-2);line-height:1.4}
 
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
-.reveal.in{opacity:1;transform:none}
-.hero .reveal:nth-child(2){transition-delay:.1s}.hero .reveal:nth-child(3){transition-delay:.2s}.hero .reveal:nth-child(4){transition-delay:.3s}
-
-/* TRUST */
-.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px 0;position:relative;z-index:1;background:var(--paper)}
-.trust-in{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}
-.trust small{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);font-weight:600}
-.trust-logos{display:flex;gap:44px;flex-wrap:wrap;font-family:var(--serif);font-size:20px;color:var(--ink-soft);opacity:.8}
+/* MARQUEE */
+.marquee{background:var(--ink);color:var(--ivory);padding:30px 0;overflow:hidden;position:relative;z-index:1}
+.track{display:flex;width:max-content;animation:mq 50s linear infinite}
+.track span{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(26px,3vw,42px);padding:0 34px;display:flex;align-items:center;gap:68px;white-space:nowrap;font-variation-settings:"SOFT" 100,"WONK" 1}
+.track span::after{content:"";width:22px;height:1px;border-top:2px dashed var(--accent)}
+@keyframes mq{to{transform:translateX(-50%)}}
 
 section{position:relative;z-index:1}
-.sec{padding:clamp(80px,11vw,150px) 0}
-.sec-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:64px;flex-wrap:wrap}
-.sec-head h2{max-width:720px;margin-top:18px}
-.sec-head p{max-width:380px;color:var(--ink-soft)}
+.sec{padding:clamp(100px,14vw,200px) 0}
+.head{display:grid;grid-template-columns:1fr 1fr;gap:5vw;margin-bottom:90px;align-items:end}
+.head p{color:var(--ink-2);max-width:420px;justify-self:end}
+
+/* PHILOSOPHY scrub text */
+.philo{display:grid;grid-template-columns:220px 1fr;gap:5vw}
+.scrub{font-family:var(--serif);font-weight:300;font-size:clamp(30px,3.9vw,58px);line-height:1.18;letter-spacing:-.025em}
+.scrub .w{opacity:.14;transition:opacity .25s}
+.scrub .w.on{opacity:1}
+.scrub em{color:var(--accent)}
 
 /* NUMBERS */
-.numbers{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.num{padding:34px 28px;border-radius:var(--r-md);background:var(--paper-2)}
-.num b{font-family:var(--serif);font-size:clamp(44px,5vw,64px);font-weight:400;display:block;line-height:1}
-.num span{font-size:15px;color:var(--ink-soft);display:block;margin-top:10px}
-.num:nth-child(1){background:var(--blush)}.num:nth-child(2){background:#DCEBE0}.num:nth-child(3){background:#DDEDF5}.num:nth-child(4){background:#FBE8BF}
+.nums{display:grid;grid-template-columns:repeat(4,1fr);margin-top:120px;border-top:1px solid var(--line)}
+.n{padding:40px 30px 0 0}
+.n+.n{padding-left:30px;border-left:1px solid var(--line)}
+.n b{font-family:var(--serif);font-weight:200;font-size:clamp(56px,6.4vw,104px);letter-spacing:-.05em;line-height:1;display:block}
+.n b sup{font-size:.4em;color:var(--accent);vertical-align:top;margin-left:4px;font-weight:300}
+.n span{display:block;margin-top:14px;font-size:14.5px;color:var(--ink-2);max-width:190px}
 
-/* CARE */
-.care-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{background:#fff;border-radius:var(--r-md);padding:34px 30px 30px;border:1px solid var(--line);transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s;position:relative;overflow:hidden}
-.card:hover{transform:translateY(-6px) rotate(-.4deg);box-shadow:0 30px 60px -30px rgba(27,42,65,.35)}
-.card .ic{width:58px;height:58px;border-radius:18px;display:grid;place-items:center;margin-bottom:26px}
-.card h3{margin-bottom:12px}
-.card p{color:var(--ink-soft);font-size:15.5px}
-.card ul{list-style:none;margin-top:18px;display:flex;flex-wrap:wrap;gap:8px}
-.card li{font-size:12.5px;font-weight:600;padding:5px 11px;border-radius:999px;background:var(--paper)}
-.card.feature{grid-column:span 2;background:var(--ink);color:var(--paper);display:grid;grid-template-columns:1fr 1fr;gap:30px;padding:0;border:0}
-.card.feature .txt{padding:40px 36px}
-.card.feature p{color:rgba(251,246,238,.75)}
-.card.feature li{background:rgba(251,246,238,.12)}
-.card.feature .slot{min-height:300px}
+/* CARE index */
+.care{background:var(--stone)}
+.rows{border-top:1px solid var(--ink)}
+.row{display:grid;grid-template-columns:90px 1.1fr 1.4fr 60px;gap:30px;align-items:center;padding:38px 0;border-bottom:1px solid var(--line);position:relative;z-index:0}
+.row::before{content:"";position:absolute;inset:0 calc(var(--g) * -1);background:var(--ivory);transform:scaleY(0);transform-origin:bottom;transition:transform .7s var(--ease);z-index:-1}
+.row:hover::before{transform:scaleY(1)}
+.row .no{font-family:var(--serif);font-style:italic;color:var(--accent);font-size:18px}
+.row h3{transition:transform .7s var(--ease)}
+.row:hover h3{transform:translateX(14px)}
+.row p{color:var(--ink-2);font-size:15.5px;line-height:1.6}
+.row .tags{display:block;margin-top:8px;font-size:12.5px;color:var(--ink-3);letter-spacing:.02em}
+.row .go{width:50px;height:50px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:all .6s var(--ease);justify-self:end}
+.row:hover .go{background:var(--ink);color:var(--ivory);border-color:var(--ink);transform:rotate(-45deg)}
+.care-img{display:grid;grid-template-columns:1.4fr 1fr;gap:24px;margin-top:90px;align-items:end}
+.care-img .slot{aspect-ratio:4/3;border-radius:4px}
+.care-img blockquote{font-family:var(--serif);font-weight:300;font-size:clamp(22px,2vw,28px);line-height:1.35;padding:0 0 10px 30px;border-left:1px solid var(--accent)}
+.care-img cite{display:block;margin-top:18px;font:500 12px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);font-style:normal}
 
-/* JOURNEY */
-.journey{background:var(--ink);color:var(--paper);border-radius:var(--r-lg);margin:0 clamp(8px,2vw,24px);overflow:hidden}
-.journey .eyebrow{color:rgba(251,246,238,.7)}
-.journey .sec-head p{color:rgba(251,246,238,.7)}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
-.steps::before{content:"";position:absolute;top:30px;left:30px;right:30px;border-top:2px dashed rgba(251,246,238,.3)}
-.step{padding-right:28px;position:relative}
-.step .n{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-size:24px;color:var(--ink);margin-bottom:28px;position:relative}
-.step h3{margin-bottom:12px;font-size:24px}
-.step p{color:rgba(251,246,238,.72);font-size:15.5px}
-.journey-note{margin-top:60px;padding:26px 30px;border-radius:var(--r-md);background:rgba(251,246,238,.07);display:flex;gap:18px;align-items:center;font-size:16px}
+/* JOURNEY sticky */
+.journey{background:var(--ink);color:var(--ivory)}
+.journey .label{color:rgba(247,243,236,.55)}
+.j-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:6vw}
+.j-sticky{position:sticky;top:130px;align-self:start}
+.j-sticky p{color:rgba(247,243,236,.65);margin-top:36px;max-width:400px}
+.j-prog{margin-top:50px;height:1px;background:var(--line-l);position:relative;max-width:400px}
+.j-prog i{position:absolute;left:0;top:0;height:1px;background:var(--accent);width:0;transition:width .2s}
+.step{padding:56px 0;border-top:1px solid var(--line-l);display:grid;grid-template-columns:130px 1fr;gap:30px}
+.step:last-of-type{border-bottom:1px solid var(--line-l)}
+.step .big{font-family:var(--serif);font-weight:200;font-size:110px;line-height:.8;color:transparent;-webkit-text-stroke:1px rgba(247,243,236,.45);letter-spacing:-.05em;transition:color .8s,-webkit-text-stroke .8s}
+.step.on .big{color:var(--accent);-webkit-text-stroke:1px var(--accent)}
+.step .when{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:rgba(247,243,236,.5)}
+.step h3{margin:12px 0 16px}
+.step p{color:rgba(247,243,236,.68);font-size:16px;max-width:460px}
+.j-note{margin-top:70px;padding:30px 34px;border:1px solid var(--line-l);border-radius:4px;display:flex;gap:22px;align-items:flex-start;font-size:15.5px;color:rgba(247,243,236,.8)}
+.j-note b{font-family:var(--serif);font-style:italic;font-weight:300;font-size:22px;color:var(--ivory);display:block;margin-bottom:4px}
 
 /* ABOUT */
-.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center}
-.about-visual{position:relative;aspect-ratio:4/5}
-.about-visual .slot{position:absolute;inset:0;border-radius:var(--r-lg) var(--r-lg) var(--r-lg) 140px}
-.about-visual .slot.small{inset:auto -30px -40px auto;width:46%;aspect-ratio:1;border-radius:50%;border:8px solid var(--paper);z-index:2}
-.quote{font-family:var(--serif);font-size:clamp(26px,2.8vw,36px);line-height:1.25;margin:22px 0 28px;font-variation-settings:"SOFT" 100,"WONK" 1}
-.creds{margin-top:36px;border-top:1px solid var(--line)}
-.cred{display:grid;grid-template-columns:120px 1fr;gap:20px;padding:16px 0;border-bottom:1px solid var(--line);font-size:15.5px}
-.cred span{color:var(--ink-soft);font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding-top:2px}
-.sign{font-family:var(--serif);font-style:italic;font-size:30px;margin-top:30px;color:var(--coral);font-variation-settings:"WONK" 1}
+.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:7vw;align-items:start}
+.portrait{position:relative;aspect-ratio:3/4}
+.portrait .slot{position:absolute;inset:0;border-radius:999px 999px 4px 4px}
+.portrait .mini{position:absolute;inset:auto -12% -8% auto;width:44%;aspect-ratio:1;border-radius:50%;border:10px solid var(--ivory);z-index:2}
+.about blockquote{font-family:var(--serif);font-weight:300;font-size:clamp(30px,3.4vw,50px);line-height:1.12;letter-spacing:-.025em;margin:30px 0 40px}
+.about blockquote em{color:var(--accent)}
+.about .bio{color:var(--ink-2);max-width:560px}
+.creds{margin-top:50px}
+.cred{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:18px 0;border-top:1px solid var(--line);font-size:15.5px}
+.cred:last-child{border-bottom:1px solid var(--line)}
+.cred span{font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);padding-top:4px}
+.sig{margin-top:44px;display:flex;align-items:center;gap:20px}
+.sig svg{width:190px;height:70px}
+.sig path{fill:none;stroke:var(--ink);stroke-width:1.6;stroke-linecap:round;stroke-dasharray:900;stroke-dashoffset:900;transition:stroke-dashoffset 2.6s var(--ease) .3s}
+.sig.in path{stroke-dashoffset:0}
+.sig small{font-size:13px;color:var(--ink-3);line-height:1.5}
 
 /* FILM */
-.film{position:relative;border-radius:var(--r-lg);overflow:hidden;aspect-ratio:16/8;cursor:pointer}
-.film .slot{position:absolute;inset:0;background:linear-gradient(120deg,#26385A,#3E5B7E 50%,#7FA9BE)}
-.film-ov{position:absolute;inset:0;z-index:3;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(24px,4vw,56px);color:var(--paper);background:linear-gradient(transparent 40%,rgba(15,27,46,.75))}
-.play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:110px;height:110px;border-radius:50%;background:var(--paper);display:grid;place-items:center;transition:transform .4s}
-.play::after{content:"";position:absolute;inset:-14px;border-radius:50%;border:1.5px solid rgba(251,246,238,.6);animation:ring 2.4s ease-out infinite}
-@keyframes ring{from{transform:scale(.9);opacity:1}to{transform:scale(1.35);opacity:0}}
-.film:hover .play{transform:translate(-50%,-50%) scale(1.08)}
-.film h3{font-size:clamp(26px,3vw,40px);max-width:600px}
+.film{position:relative;aspect-ratio:16/8.2;overflow:hidden;cursor:pointer;clip-path:inset(6% 6% 6% 6% round 4px);transition:clip-path 1.6s var(--ease),opacity 1.2s var(--ease)}
+.film.in{clip-path:inset(0 0 0 0 round 4px)}
+.film .slot{position:absolute;inset:0;background:radial-gradient(100% 90% at 70% 30%,#5A6E86,#22324A 70%)}
+.film .tag{color:rgba(247,243,236,.6)}
+.film-ov{position:absolute;inset:0;z-index:3;display:flex;justify-content:space-between;align-items:flex-end;padding:clamp(24px,4vw,60px);color:var(--ivory);background:linear-gradient(transparent 45%,rgba(10,18,28,.7))}
+.film-ov h3{font-size:clamp(28px,3.4vw,52px);max-width:640px}
+.film-ov .label{color:rgba(247,243,236,.7);display:block;margin-bottom:18px}
+.playbtn{width:120px;height:120px;border-radius:50%;border:1px solid rgba(247,243,236,.5);display:grid;place-items:center;flex:none;font-size:12px;letter-spacing:.2em;text-transform:uppercase;transition:all .6s var(--ease);backdrop-filter:blur(6px)}
+.film:hover .playbtn{background:var(--ivory);color:var(--ink);transform:scale(1.06)}
 
 /* FAQ */
-.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}
-.faq-item{border-bottom:1px solid var(--line)}
-.faq-q{width:100%;background:none;border:0;text-align:left;padding:26px 0;display:flex;justify-content:space-between;gap:20px;align-items:center;font-family:var(--serif);font-size:clamp(20px,2vw,24px);color:var(--ink);cursor:pointer}
-.faq-q .pm{width:36px;height:36px;border-radius:50%;flex:none;background:var(--paper-2);display:grid;place-items:center;transition:transform .35s,background .35s;font-family:var(--sans);font-size:20px}
-.faq-item.open .pm{transform:rotate(45deg);background:var(--sun)}
-.faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s cubic-bezier(.2,.8,.2,1)}
+.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:7vw}
+.faq-item{border-top:1px solid var(--line)}
+.faq-item:last-child{border-bottom:1px solid var(--line)}
+.faq-q{width:100%;background:none;border:0;text-align:left;padding:32px 0;display:flex;justify-content:space-between;gap:24px;align-items:center;font-family:var(--serif);font-weight:300;font-size:clamp(21px,2vw,28px);letter-spacing:-.015em;color:var(--ink);cursor:pointer}
+.pm{width:18px;height:18px;position:relative;flex:none}
+.pm::before,.pm::after{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:var(--ink);transition:transform .6s var(--ease)}
+.pm::after{transform:rotate(90deg)}
+.faq-item.open .pm::after{transform:rotate(0)}
+.faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .7s var(--ease)}
 .faq-item.open .faq-a{grid-template-rows:1fr}
 .faq-a>div{overflow:hidden}
-.faq-a p{padding:0 50px 26px 0;color:var(--ink-soft)}
+.faq-a p{padding:0 60px 34px 0;color:var(--ink-2)}
 
 /* BOOK */
-.book{background:var(--blush);border-radius:var(--r-lg);margin:0 clamp(8px,2vw,24px);position:relative;overflow:hidden}
-.book .blob{z-index:0}
-.book-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;position:relative;z-index:1}
-.form{background:var(--paper);border-radius:var(--r-md);padding:clamp(24px,3vw,40px);box-shadow:0 30px 60px -30px rgba(27,42,65,.3)}
-.form label{display:block;font-size:13px;font-weight:600;margin-bottom:6px}
-.form input,.form select,.form textarea{width:100%;padding:14px 16px;border-radius:14px;border:1.5px solid var(--line);background:#fff;font-family:var(--sans);font-size:15px;color:var(--ink);margin-bottom:18px;transition:border .2s}
-.form input:focus,.form select:focus,.form textarea:focus{outline:0;border-color:var(--ink)}
-.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.form .btn{width:100%;justify-content:center}
-.form-done{display:none;text-align:center;padding:40px 10px}
-.form.sent .form-fields{display:none}.form.sent .form-done{display:block}
-.contact-list{margin-top:34px;display:grid;gap:16px}
-.contact-list div{display:flex;gap:14px;align-items:flex-start}
-.contact-list .ci{width:44px;height:44px;border-radius:14px;background:var(--paper);display:grid;place-items:center;flex:none}
-.urgent{margin-top:30px;padding:18px 20px;border-radius:16px;background:var(--ink);color:var(--paper);font-size:15px}
-.urgent b{color:var(--sun)}
+.book{background:var(--stone)}
+.book-grid{display:grid;grid-template-columns:1fr 1fr;gap:7vw}
+.book h2{margin:28px 0 32px}
+.book .lead{color:var(--ink-2);max-width:440px}
+.contact{margin-top:60px;display:grid;grid-template-columns:1fr 1fr;gap:30px;border-top:1px solid var(--line);padding-top:30px}
+.contact span{display:block;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px}
+.contact b{font-family:var(--serif);font-weight:300;font-size:24px;letter-spacing:-.01em}
+.urgent{margin-top:40px;display:flex;gap:16px;align-items:flex-start;font-size:14.5px;color:var(--ink-2);padding:20px 22px;background:var(--ivory);border-left:2px solid var(--accent)}
+.form{background:var(--ivory);padding:clamp(28px,4vw,56px);border-radius:4px}
+.field{position:relative;margin-bottom:30px}
+.field label{display:block;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
+.field input,.field select,.field textarea{width:100%;border:0;border-bottom:1px solid var(--line);background:transparent;padding:10px 0 12px;font:400 18px var(--sans);color:var(--ink);border-radius:0;transition:border .4s;-webkit-appearance:none;appearance:none}
+.field textarea{resize:vertical;min-height:90px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-bottom-color:var(--ink)}
+.field::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--accent);transition:width .6s var(--ease)}
+.field:focus-within::after{width:100%}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.form .btn{width:100%;justify-content:space-between;margin-top:10px}
+.form .note{font-size:12.5px;color:var(--ink-3);margin-top:18px}
+.done{display:none;padding:60px 0;text-align:center}
+.done svg{margin:0 auto}
+.form.sent .fields{display:none}.form.sent .done{display:block}
+.done h3{margin:24px 0 10px}
 
-footer{padding:70px 0 40px;font-size:14px;color:var(--ink-soft)}
-.foot{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:30px;margin-top:50px}
-.big-sign{font-family:var(--serif);font-size:clamp(48px,10vw,150px);line-height:.9;color:var(--ink);letter-spacing:-.04em}
-.big-sign em{color:var(--coral)}
+/* FOOTER */
+footer{background:var(--ink);color:var(--ivory);padding:120px 0 40px;position:relative;z-index:1;overflow:hidden}
+.f-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:5vw;padding-bottom:90px}
+.f-top h3{font-size:clamp(30px,3vw,44px);max-width:440px}
+.f-top .label{color:rgba(247,243,236,.5);display:block;margin-bottom:18px}
+.f-top a,.f-top p{display:block;color:rgba(247,243,236,.78);font-size:15.5px;margin-bottom:8px;transition:color .3s}
+.f-top a:hover{color:var(--accent)}
+.wordmark{font-family:var(--serif);font-weight:200;font-size:clamp(64px,15vw,250px);line-height:.85;letter-spacing:-.06em;white-space:nowrap;color:var(--ivory)}
+.wordmark em{color:var(--accent)}
+.f-bot{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;margin-top:50px;padding-top:26px;border-top:1px solid var(--line-l);font-size:13px;color:rgba(247,243,236,.5)}
 
 /* RESPONSIVE */
-@media (max-width:980px){
-  .nav-links,.nav-cta{display:none}
+@media (max-width:1080px){
+  .menu,.nav-r .tel,.nav-r .btn{display:none}
+  .nav-in{grid-template-columns:1fr auto}
   .burger{display:block}
-  nav.open .nav-links{display:flex;flex-direction:column;position:absolute;top:78px;left:0;right:0;background:var(--paper);padding:24px var(--gutter) 32px;gap:20px;font-size:20px;box-shadow:0 20px 30px -20px rgba(27,42,65,.25)}
-  .hero{padding-top:120px}
-  .hero-grid,.about-grid,.faq-grid,.book-grid{grid-template-columns:1fr;gap:50px}
-  .hero-visual{max-width:440px;margin:0 auto;width:100%}
-  .s1{left:-6px}.s2{right:-6px}
-  .numbers{grid-template-columns:1fr 1fr}
-  .care-grid{grid-template-columns:1fr}
-  .card.feature{grid-column:auto;grid-template-columns:1fr}
-  .steps{grid-template-columns:1fr 1fr;gap:40px}
-  .steps::before{display:none}
-  .about-visual{max-width:440px;width:100%}
-  .about-visual .slot.small{right:-10px}
-  .film{aspect-ratio:4/5}
+  nav.open{background:var(--ivory)}
+  nav.open .menu{display:flex;flex-direction:column;position:absolute;top:84px;left:0;right:0;height:calc(100svh - 84px);background:var(--ivory);padding:40px var(--g);gap:22px}
+  nav.open .menu a{font-family:var(--serif);font-weight:300;font-size:44px;color:var(--ink);letter-spacing:-.02em}
+  .hero-grid,.head,.philo,.j-grid,.about,.faq,.book-grid,.care-img{grid-template-columns:1fr}
+  .hero{min-height:auto;padding-top:130px}
+  .hero-sub{grid-template-columns:1fr;gap:34px;padding-bottom:60px}
+  .arch{max-width:420px;width:80%;margin:0 0 90px auto}
+  .seal,.seal-c{left:-50px;width:104px;height:104px}
+  .head p{justify-self:start}
+  .nums{grid-template-columns:1fr 1fr}
+  .n:nth-child(3){padding-left:0;border-left:0}
+  .n:nth-child(n+3){border-top:1px solid var(--line);margin-top:30px}
+  .row{grid-template-columns:50px 1fr 50px;gap:18px}
+  .row p{grid-column:2/3}
+  .row .go{grid-row:1;grid-column:3}
+  .j-sticky{position:static}
+  .portrait{max-width:440px;width:88%}
+  .f-top{grid-template-columns:1fr 1fr}
+  .f-top>div:first-child{grid-column:1/-1}
   .stitch{display:none}
 }
-@media (max-width:560px){
+@media (max-width:640px){
   body{font-size:16px}
-  .steps{grid-template-columns:1fr}
-  .numbers{gap:12px}.num{padding:24px 18px}
-  .row2{grid-template-columns:1fr}
-  .cred{grid-template-columns:1fr;gap:4px}
-  .sticker{font-size:12px;padding:10px 12px}.sticker b{font-size:20px}.sticker .dot{width:32px;height:32px}
-  .play{width:80px;height:80px}
+  .facts{grid-template-columns:1fr}
+  .fact+.fact{padding-left:0;border-left:0;border-top:1px solid var(--line)}
+  .fact{padding:20px 0}
+  .step{grid-template-columns:1fr;gap:10px;padding:44px 0}
+  .step .big{font-size:80px}
+  .f2,.contact{grid-template-columns:1fr}
+  .cred{grid-template-columns:1fr;gap:2px}
+  .film{aspect-ratio:3/4}
+  .film-ov{flex-direction:column;align-items:flex-start;gap:24px}
+  .playbtn{width:84px;height:84px;font-size:10px;order:-1}
+  .faq-a p{padding-right:0}
+  .f-top{grid-template-columns:1fr}
 }
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .l>span,.fade{transform:none;opacity:1}.scrub .w{opacity:1}.loader{display:none}
+}
 </style>
 </head>
 <body>
 
+<div class="loader" id="loader" aria-hidden="true">
+  <svg viewBox="0 0 84 84"><circle class="ring" cx="42" cy="42" r="40"/><circle cx="42" cy="42" r="34"/><text x="42" y="52" text-anchor="middle">a</text></svg>
+</div>
+
 <nav id="nav">
   <div class="wrap nav-in">
-    <a href="#top" class="logo"><span class="logo-mark">a</span>Dr. Asha Varma</a>
-    <ul class="nav-links">
-      <li><a href="#care">What I treat</a></li>
+    <a href="#top" class="brand">
+      <svg viewBox="0 0 34 34"><circle cx="17" cy="17" r="16" fill="none" stroke="#14202E" stroke-width="1"/><circle cx="17" cy="17" r="12.5" fill="none" stroke="#C4613F" stroke-width="1.2" stroke-dasharray="2.4 2.6"/><text x="17" y="22.5" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="15" fill="#14202E">a</text></svg>
+      <span><b>Dr. Asha Varma</b><small>Paediatric Surgeon</small></span>
+    </a>
+    <ul class="menu" id="menu">
+      <li><a href="#care">Care</a></li>
       <li><a href="#journey">Surgery day</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#faq">Parents ask</a></li>
+      <li><a href="#faq">Questions</a></li>
+      <li><a href="#book">Contact</a></li>
     </ul>
-    <a href="#book" class="btn btn-primary nav-cta">Book a consult</a>
-    <button class="burger" aria-label="Menu" id="burger"><span></span><span></span></button>
+    <div class="nav-r">
+      <a class="tel" href="tel:+910000000000">+91 00000 00000</a>
+      <a href="#book" class="btn btn-dark mag">Book a consultation</a>
+      <button class="burger" id="burger">Menu</button>
+    </div>
   </div>
 </nav>
 
 <main id="top" style="position:relative">
-  <!-- Signature: a suture line that sews itself down the page as you scroll -->
   <svg class="stitch" id="stitch" viewBox="0 0 100 1000" preserveAspectRatio="none" aria-hidden="true">
-    <path d="M93 40 C 99 120, 80 160, 96 230 S 70 330, 4 360 S -2 470, 6 520 S 98 560, 95 640 S 60 760, 4 790 S 10 900, 50 1000" stroke="#EE6F57" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="10 9"/>
+    <path d="M97 60 C 99 120, 92 170, 98 230 S 70 330, 3 360 S -1 470, 3 520 S 98 560, 97 640 S 60 760, 3 790 S 5 900, 50 1000" stroke="#C4613F" stroke-opacity=".75" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="9 8"/>
   </svg>
 
   <!-- HERO -->
   <header class="hero">
     <div class="wrap hero-grid">
       <div>
-        <span class="eyebrow reveal">Paediatric &amp; Neonatal Surgeon · Kochi</span>
-        <h1 class="reveal">Small patients.<br><em>Steady</em> hands.</h1>
-        <p class="lead reveal">I operate on babies and children, from day-old newborns to teenagers. Most go home within a day, with a smaller scar than you're picturing right now.</p>
-        <div class="hero-actions reveal">
-          <a href="#book" class="btn btn-primary">Book a consultation <span class="arr">→</span></a>
-          <a href="#journey" class="btn btn-ghost">What surgery day looks like</a>
+        <div class="label fade">Paediatric &amp; Neonatal Surgery · Kochi</div>
+        <h1><span class="l"><span>Small patients.</span></span><span class="l"><span><em class="accent">Steady</em> hands.</span></span></h1>
+        <div class="hero-sub">
+          <p class="fade">I operate on babies and children, from day-old newborns to teenagers. Most go home within a day, with a smaller scar than you're picturing right now.</p>
+          <div class="hero-cta fade">
+            <a href="#book" class="btn btn-dark mag">Book a consultation <span class="circ">→</span></a>
+            <a href="#journey" class="link">What surgery day looks like</a>
+          </div>
         </div>
       </div>
-      <div class="hero-visual reveal">
-        <div class="blob b1"></div><div class="blob b2"></div>
+      <figure class="arch fade">
+        <svg class="seal" viewBox="0 0 128 128" aria-hidden="true"><defs><path id="cp" d="M64 64 m-52 0 a52 52 0 1 1 104 0 a52 52 0 1 1 -104 0"/></defs><text><textPath href="#cp">Children only · Since 2008 · Kochi ·</textPath></text></svg>
+        <div class="seal-c" aria-hidden="true"><span>a</span></div>
         <div class="slot"><img src="assets/img-01-hero.jpg" alt="Dr. Asha Varma kneeling to talk with a young patient at eye level"><span class="tag">IMG-01 · Hero portrait</span></div>
-        <div class="sticker s1"><span class="dot" style="background:var(--sun)">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B2A41" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 13l3 3 5-6"/></svg></span>
-          <div><b>18 yrs</b>children only</div></div>
-        <div class="sticker s2"><span class="dot" style="background:var(--sage)">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B2A41" stroke-width="2"><path d="M4 12h4l2-5 4 10 2-5h4"/></svg></span>
-          <div><b>3 mm</b>keyhole incisions</div></div>
+        <figcaption><span>Dr. Asha Varma, MCh</span><span>The clinic, Kochi</span></figcaption>
+      </figure>
+    </div>
+    <div class="wrap">
+      <div class="facts fade">
+        <div class="fact"><b>18</b><span>years operating<br>only on children</span></div>
+        <div class="fact"><b>3<small style="font-size:.5em">mm</small></b><span>keyhole incisions<br>for most procedures</span></div>
+        <div class="fact"><b>24/7</b><span>newborn<br>emergency cover</span></div>
       </div>
     </div>
   </header>
 
-  <div class="trust">
-    <div class="wrap trust-in">
-      <small>Operates at</small>
-      <div class="trust-logos"><span>Partner Hospital One</span><span>Children's Wing Two</span><span>Neonatal Unit Three</span></div>
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>Hernia</span><span>Appendicitis</span><span>Hypospadias</span><span>Undescended testis</span><span>Oesophageal atresia</span><span>Pyloric stenosis</span><span>Tongue-tie</span><span>Kidney obstruction</span>
+      <span>Hernia</span><span>Appendicitis</span><span>Hypospadias</span><span>Undescended testis</span><span>Oesophageal atresia</span><span>Pyloric stenosis</span><span>Tongue-tie</span><span>Kidney obstruction</span>
     </div>
   </div>
 
-  <!-- NUMBERS -->
-  <section class="sec" style="padding-bottom:0">
-    <div class="wrap numbers">
-      <div class="num reveal"><b>4,200+</b><span>children operated on</span></div>
-      <div class="num reveal"><b>70%</b><span>done by keyhole surgery</span></div>
-      <div class="num reveal"><b>1 day</b><span>typical hospital stay</span></div>
-      <div class="num reveal"><b>24/7</b><span>newborn emergency cover</span></div>
-    </div>
-  </section>
-
-  <!-- CARE -->
-  <section class="sec" id="care">
+  <!-- 01 PHILOSOPHY -->
+  <section class="sec">
     <div class="wrap">
-      <div class="sec-head">
-        <div><span class="eyebrow reveal">What I treat</span>
-        <h2 class="reveal">Surgery sized for a <em>child</em>, not shrunk from an adult.</h2></div>
-        <p class="reveal">Children aren't small adults. Their tissues heal differently, their fears are different, and their parents need different answers.</p>
+      <div class="philo">
+        <div class="label fade"><span class="idx">01</span>The approach</div>
+        <p class="scrub" id="scrub">Children aren't small adults. Their tissues heal differently, their fears are different, and their parents need different answers. I've spent eighteen years building a practice around that <em>one idea.</em></p>
       </div>
-      <div class="care-grid">
-        <article class="card feature reveal">
-          <div class="txt">
-            <div class="ic" style="background:var(--coral)"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FBF6EE" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg></div>
-            <h3>Keyhole surgery for children</h3>
-            <p>Most of my operations use cameras and instruments thinner than a pencil. Less pain, smaller scars, back to school sooner.</p>
-            <ul><li>Appendix</li><li>Gallbladder</li><li>Hernia</li><li>Kidney &amp; ureter</li></ul>
-          </div>
-          <div class="slot"><img src="assets/img-05-hands.jpg" alt="Surgeon's gloved hands holding a teddy bear with a small bandage"><span class="tag">IMG-05 · Hands &amp; teddy</span></div>
-        </article>
-        <article class="card reveal">
-          <div class="ic" style="background:#DDEDF5"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1B2A41" stroke-width="2"><path d="M12 21c-4-3-7-6-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4-3 7-7 10z"/></svg></div>
-          <h3>Newborn surgery</h3>
-          <p>Birth defects of the food pipe, bowel and abdominal wall, often in the first days of life.</p>
-          <ul><li>Oesophageal atresia</li><li>Gastroschisis</li></ul>
-        </article>
-        <article class="card reveal">
-          <div class="ic" style="background:#DCEBE0"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1B2A41" stroke-width="2"><path d="M12 3v18M6 9l6-6 6 6"/></svg></div>
-          <h3>Urology</h3>
-          <p>Conditions of the kidneys, bladder and genitals, handled with privacy and care.</p>
-          <ul><li>Hypospadias</li><li>Undescended testis</li><li>PUJ obstruction</li></ul>
-        </article>
-        <article class="card reveal">
-          <div class="ic" style="background:#FBE8BF"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1B2A41" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="5"/><path d="M9 12h6"/></svg></div>
-          <h3>Day-care procedures</h3>
-          <p>In by morning, home by evening. Common, quick, and planned around school.</p>
-          <ul><li>Hernia</li><li>Tongue-tie</li><li>Circumcision</li></ul>
-        </article>
-        <article class="card reveal">
-          <div class="ic" style="background:var(--blush)"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1B2A41" stroke-width="2"><path d="M12 8v5l3 2"/><circle cx="12" cy="12" r="9"/></svg></div>
-          <h3>Emergencies</h3>
-          <p>Swallowed objects, twisted testis, bowel blockage. Call first, we'll guide you on the way in.</p>
-          <ul><li>Intussusception</li><li>Torsion</li></ul>
-        </article>
+      <div class="nums">
+        <div class="n fade"><b data-count="4200">0</b><span>children operated on</span></div>
+        <div class="n fade"><b data-count="70" data-suf="%">0</b><span>of operations done by keyhole</span></div>
+        <div class="n fade"><b data-count="1">0</b><span>day, the typical hospital stay</span></div>
+        <div class="n fade"><b data-count="4">0</b><span>languages spoken at the clinic</span></div>
       </div>
     </div>
   </section>
 
-  <!-- JOURNEY -->
+  <!-- 02 CARE -->
+  <section class="sec care" id="care">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <div class="label fade"><span class="idx">02</span>What I treat</div>
+          <h2 style="margin-top:30px"><span class="l"><span>Surgery sized</span></span><span class="l"><span>for a <em class="accent">child.</em></span></span></h2>
+        </div>
+        <p class="fade">Not shrunk down from an adult operation. Every instrument, every dose and every explanation is built for someone small.</p>
+      </div>
+      <div class="rows">
+        <div class="row fade"><span class="no">i.</span><h3>Keyhole surgery</h3><p>Cameras and instruments thinner than a pencil. Less pain, smaller scars, back to school sooner.<span class="tags">Appendix · Gallbladder · Hernia · Kidney</span></p><span class="go">→</span></div>
+        <div class="row fade"><span class="no">ii.</span><h3>Newborn surgery</h3><p>Birth defects of the food pipe, bowel and abdominal wall, often in the first days of life.<span class="tags">Oesophageal atresia · Gastroschisis · Pyloric stenosis</span></p><span class="go">→</span></div>
+        <div class="row fade"><span class="no">iii.</span><h3>Paediatric urology</h3><p>Kidneys, bladder and genitals, handled with privacy for the child and plain answers for parents.<span class="tags">Hypospadias · Undescended testis · PUJ obstruction</span></p><span class="go">→</span></div>
+        <div class="row fade"><span class="no">iv.</span><h3>Day-care procedures</h3><p>In by morning, home by evening. Planned around school, not the other way round.<span class="tags">Hernia · Tongue-tie · Circumcision</span></p><span class="go">→</span></div>
+        <div class="row fade"><span class="no">v.</span><h3>Emergencies</h3><p>Swallowed objects, a twisted testis, a blocked bowel. Call first. We'll guide you on the way in.<span class="tags">Intussusception · Torsion · Foreign body</span></p><span class="go">→</span></div>
+      </div>
+      <div class="care-img">
+        <div class="slot fade"><img src="assets/img-05-hands.jpg" alt="Surgeon's gloved hands placing a small plaster on a teddy bear"><span class="tag">IMG-05 · Hands &amp; teddy</span></div>
+        <blockquote class="fade">"If waiting is safe, I'll tell you. Some conditions settle on their own, and the best operation is sometimes the one we don't do."<cite>On recommending surgery</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 JOURNEY -->
   <section class="sec journey" id="journey">
-    <div class="wrap">
-      <div class="sec-head">
-        <div><span class="eyebrow reveal">Surgery day, step by step</span>
-        <h2 class="reveal">You'll know what happens <em>before</em> it happens.</h2></div>
-        <p class="reveal">The scariest part for most parents is the unknown. So here's the whole day, laid out.</p>
+    <div class="wrap j-grid">
+      <div class="j-sticky">
+        <div class="label fade"><span class="idx">03</span>Surgery day</div>
+        <h2 style="margin-top:30px"><span class="l"><span>You'll know</span></span><span class="l"><span>what happens</span></span><span class="l"><span><em class="accent">before</em> it does.</span></span></h2>
+        <p class="fade">The hardest part for most parents is the unknown. So here's the whole day, in the order it happens.</p>
+        <div class="j-prog"><i id="jprog"></i></div>
       </div>
-      <div class="steps">
-        <div class="step reveal"><div class="n" style="background:var(--sun)">1</div><h3>The first visit</h3><p>I examine your child, explain the problem with drawings, and tell you honestly whether surgery is needed at all.</p></div>
-        <div class="step reveal"><div class="n" style="background:var(--sky)">2</div><h3>The night before</h3><p>You get a short fasting guide and a picture story your child can read about their own hospital day.</p></div>
-        <div class="step reveal"><div class="n" style="background:var(--sage)">3</div><h3>The operation</h3><p>You stay with your child until they're asleep. I come out to see you the moment we finish.</p></div>
-        <div class="step reveal"><div class="n" style="background:var(--coral)">4</div><h3>Going home</h3><p>A written recovery plan, a direct number for questions, and a follow-up visit about a week later.</p></div>
-      </div>
-      <div class="journey-note reveal">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F5C04E" stroke-width="2" style="flex:none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-        <span>One parent can stay overnight in every case. Bring their favourite toy. It's welcome in the operating room until they fall asleep.</span>
+      <div id="steps">
+        <div class="step"><div class="big">1</div><div><div class="when">Two weeks before</div><h3>The first visit</h3><p>I examine your child, explain the problem with simple drawings, and tell you honestly whether surgery is needed at all.</p></div></div>
+        <div class="step"><div class="big">2</div><div><div class="when">The night before</div><h3>A story for your child</h3><p>You get a one-page fasting guide and a short picture story your child can read about their own hospital day.</p></div></div>
+        <div class="step"><div class="big">3</div><div><div class="when">The morning</div><h3>The operation</h3><p>You stay with your child until they're asleep. Their favourite toy comes with them. I come out to see you the moment we finish.</p></div></div>
+        <div class="step"><div class="big">4</div><div><div class="when">Afterwards</div><h3>Going home</h3><p>A written recovery plan, a direct number for questions, and a follow-up visit about a week later.</p></div></div>
+        <div class="j-note fade"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C4613F" stroke-width="1.4" style="flex:none;margin-top:4px"><path d="M3 12l9-8 9 8M5 10v10h14V10"/></svg><div><b>One parent stays, always.</b>Overnight in every case, in the same room as your child.</div></div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- 04 ABOUT -->
   <section class="sec" id="about">
-    <div class="wrap about-grid">
-      <div class="about-visual reveal">
+    <div class="wrap about">
+      <div class="portrait fade">
         <div class="slot"><img src="assets/img-02-portrait.jpg" alt="Portrait of Dr. Asha Varma"><span class="tag">IMG-02 · Portrait</span></div>
-        <div class="slot small"><img src="assets/img-03-clinic.jpg" alt="Bright, child-friendly clinic waiting area"><span class="tag">IMG-03</span></div>
+        <div class="slot mini"><img src="assets/img-03-clinic.jpg" alt="The clinic's waiting area"><span class="tag">IMG-03</span></div>
       </div>
       <div>
-        <span class="eyebrow reveal">About</span>
-        <p class="quote reveal">"I explain every operation twice. Once to the parents, and once to the child, in words they actually understand."</p>
-        <p class="reveal" style="color:var(--ink-soft)">I trained in general surgery and then specialised in paediatric surgery, with further training in neonatal and keyhole surgery. For eighteen years I've operated only on children. That focus is the point.</p>
-        <div class="creds reveal">
+        <div class="label fade"><span class="idx">04</span>About</div>
+        <blockquote><span class="l"><span>"I explain every operation</span></span><span class="l"><span>twice. Once to the parents,</span></span><span class="l"><span>once to the <em>child.</em>"</span></span></blockquote>
+        <p class="bio fade">I trained in general surgery, then specialised in paediatric surgery, with further training in newborn and keyhole surgery. For eighteen years I've operated only on children. That focus is the whole point.</p>
+        <div class="creds fade">
           <div class="cred"><span>Training</span><div>MBBS · MS General Surgery · MCh Paediatric Surgery</div></div>
           <div class="cred"><span>Fellowship</span><div>Paediatric minimally invasive surgery</div></div>
           <div class="cred"><span>Member</span><div>Indian Association of Paediatric Surgeons</div></div>
           <div class="cred"><span>Languages</span><div>Malayalam · English · Hindi · Tamil</div></div>
         </div>
-        <div class="sign reveal">Asha Varma</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FILM -->
-  <section class="sec" style="padding-top:0">
-    <div class="wrap">
-      <div class="film reveal" id="film">
-        <div class="slot"><video id="filmVid" src="assets/vid-02-meet.mp4" poster="assets/img-04-recovery.jpg" playsinline preload="none"></video><span class="tag">VID-02 · Meet the doctor (60s)</span></div>
-        <div class="play"><svg width="30" height="30" viewBox="0 0 24 24" fill="#1B2A41"><path d="M7 4l13 8-13 8z"/></svg></div>
-        <div class="film-ov">
-          <span class="eyebrow" style="color:rgba(251,246,238,.8)">A one-minute film</span>
-          <h3 style="margin-top:14px">What I tell every parent the night before surgery.</h3>
+        <div class="sig fade" id="sig">
+          <svg viewBox="0 0 190 70" aria-hidden="true"><path d="M8 52 C 20 20, 32 8, 38 14 C 44 22, 30 50, 24 54 C 34 40, 46 30, 52 34 C 56 38, 50 48, 56 48 C 64 48, 66 30, 74 30 C 70 40, 72 50, 80 46 C 88 40, 92 26, 100 22 C 96 34, 94 48, 102 48 C 110 48, 116 32, 124 32 C 120 42, 126 50, 134 44 C 144 36, 150 30, 160 34 C 168 38, 172 44, 184 40"/></svg>
+          <small>Asha Varma<br>Consultant Paediatric Surgeon</small>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section class="sec" id="faq" style="padding-top:0">
-    <div class="wrap faq-grid">
-      <div>
-        <span class="eyebrow reveal">Parents ask me</span>
-        <h2 class="reveal" style="margin-top:18px">The questions you're <em>googling</em> at midnight.</h2>
-        <p class="reveal" style="color:var(--ink-soft);margin-top:24px">Didn't find yours? Send it with your booking request. I read every one.</p>
+  <!-- FILM -->
+  <section style="padding-bottom:clamp(100px,14vw,200px)">
+    <div class="wrap">
+      <div class="film" id="film">
+        <div class="slot"><video id="vid" src="assets/vid-02-meet.mp4" poster="assets/img-04-recovery.jpg" playsinline preload="none"></video><span class="tag">VID-02 · Meet the doctor</span></div>
+        <div class="film-ov" id="filmOv">
+          <div><span class="label">A one-minute film</span><h3>What I tell every parent the night before surgery.</h3></div>
+          <div class="playbtn">Play</div>
+        </div>
       </div>
-      <div class="faq">
-        <div class="faq-item reveal"><button class="faq-q">Is anaesthesia safe for my baby?<span class="pm">+</span></button><div class="faq-a"><div><p>Modern paediatric anaesthesia is very safe. A specialist children's anaesthetist looks after your child the entire time, and doses are calculated to their exact weight.</p></div></div></div>
-        <div class="faq-item reveal"><button class="faq-q">Can I stay with my child?<span class="pm">+</span></button><div class="faq-a"><div><p>Yes, until they fall asleep, and from the moment they start waking up. One parent can stay overnight.</p></div></div></div>
-        <div class="faq-item reveal"><button class="faq-q">How big will the scar be?<span class="pm">+</span></button><div class="faq-a"><div><p>With keyhole surgery, usually two or three cuts of 3 to 5 mm. Most fade to almost nothing as your child grows.</p></div></div></div>
-        <div class="faq-item reveal"><button class="faq-q">When can they go back to school?<span class="pm">+</span></button><div class="faq-a"><div><p>For most day-care procedures, within three to five days. I'll give you a written date and a note for school.</p></div></div></div>
-        <div class="faq-item reveal"><button class="faq-q">Does my child actually need surgery?<span class="pm">+</span></button><div class="faq-a"><div><p>Not always. Some conditions settle on their own with time. If waiting is safe, I'll tell you, and we'll watch together.</p></div></div></div>
+    </div>
+  </section>
+
+  <!-- 05 FAQ -->
+  <section class="sec" id="faq" style="padding-top:0">
+    <div class="wrap faq">
+      <div>
+        <div class="label fade"><span class="idx">05</span>Parents ask</div>
+        <h2 style="margin-top:30px"><span class="l"><span>The questions</span></span><span class="l"><span>you're asking</span></span><span class="l"><span>at <em class="accent">midnight.</em></span></span></h2>
+      </div>
+      <div>
+        <div class="faq-item open fade"><button class="faq-q">Is anaesthesia safe for my baby?<span class="pm"></span></button><div class="faq-a"><div><p>Modern paediatric anaesthesia is very safe. A specialist children's anaesthetist looks after your child the entire time, and every dose is calculated to their exact weight.</p></div></div></div>
+        <div class="faq-item fade"><button class="faq-q">Can I stay with my child?<span class="pm"></span></button><div class="faq-a"><div><p>Yes. Until they fall asleep, and from the moment they start waking up. One parent can stay overnight.</p></div></div></div>
+        <div class="faq-item fade"><button class="faq-q">How big will the scar be?<span class="pm"></span></button><div class="faq-a"><div><p>With keyhole surgery, usually two or three cuts of 3 to 5 mm. Most fade to almost nothing as your child grows.</p></div></div></div>
+        <div class="faq-item fade"><button class="faq-q">When can they go back to school?<span class="pm"></span></button><div class="faq-a"><div><p>For most day-care procedures, within three to five days. You'll get a written date and a note for the school.</p></div></div></div>
+        <div class="faq-item fade"><button class="faq-q">Does my child actually need surgery?<span class="pm"></span></button><div class="faq-a"><div><p>Not always. Some conditions settle with time. If waiting is safe, I'll tell you, and we'll watch it together.</p></div></div></div>
       </div>
     </div>
   </section>
 
   <!-- BOOK -->
   <section class="sec book" id="book">
-    <div class="blob" style="width:360px;height:360px;background:var(--sun);right:-120px;top:-120px;border-radius:55% 45% 60% 40%;opacity:.7"></div>
     <div class="wrap book-grid">
       <div>
-        <span class="eyebrow reveal">Book a consultation</span>
-        <h2 class="reveal" style="margin-top:18px">Let's talk it <em>through</em>.</h2>
-        <p class="reveal" style="color:var(--ink-soft);margin-top:20px;max-width:440px">Tell me a little about your child. My team will call you back within one working day to fix a time.</p>
-        <div class="contact-list reveal">
-          <div><span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B2A41" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><div><b>+91 00000 00000</b><br><small style="color:var(--ink-soft)">Mon to Sat, 9 am to 6 pm</small></div></div>
-          <div><span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1B2A41" stroke-width="2"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span><div><b>Clinic address line</b><br><small style="color:var(--ink-soft)">Kochi, Kerala</small></div></div>
+        <div class="label fade"><span class="idx">06</span>Consultation</div>
+        <h2><span class="l"><span>Let's talk</span></span><span class="l"><span>it <em class="accent">through.</em></span></span></h2>
+        <p class="lead fade">Tell me a little about your child. The clinic team will call you within one working day to fix a time that suits you.</p>
+        <div class="contact fade">
+          <div><span>Clinic</span><b>+91 00000 00000</b></div>
+          <div><span>Hours</span><b>Mon to Sat, 9 to 6</b></div>
         </div>
-        <div class="urgent reveal"><b>Emergency?</b> Don't fill a form. Go to the nearest emergency department or call the hospital line directly.</div>
+        <div class="urgent fade"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4613F" stroke-width="1.6" style="flex:none;margin-top:2px"><circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16.5v.5"/></svg><span>For an emergency, don't fill a form. Go to the nearest emergency department or call the hospital line directly.</span></div>
       </div>
-      <form class="form reveal" id="form">
-        <div class="form-fields">
-          <div class="row2">
-            <div><label for="pn">Your name</label><input id="pn" required placeholder="Parent or guardian"></div>
-            <div><label for="ph">Phone</label><input id="ph" type="tel" required placeholder="+91"></div>
+      <form class="form fade" id="form">
+        <div class="fields">
+          <div class="f2">
+            <div class="field"><label for="pn">Your name</label><input id="pn" required autocomplete="name"></div>
+            <div class="field"><label for="ph">Phone</label><input id="ph" type="tel" required autocomplete="tel"></div>
           </div>
-          <div class="row2">
-            <div><label for="cn">Child's first name</label><input id="cn" placeholder="Optional"></div>
-            <div><label for="ag">Child's age</label><select id="ag"><option>Newborn (0 to 1 month)</option><option>Under 1 year</option><option>1 to 5 years</option><option>6 to 12 years</option><option>13 to 18 years</option></select></div>
+          <div class="f2">
+            <div class="field"><label for="cn">Child's first name</label><input id="cn"></div>
+            <div class="field"><label for="ag">Child's age</label><select id="ag"><option>Newborn</option><option>Under 1 year</option><option>1 to 5 years</option><option>6 to 12 years</option><option>13 to 18 years</option></select></div>
           </div>
-          <label for="rs">What's going on?</label>
-          <textarea id="rs" rows="4" placeholder="A short description is enough. Mention if another doctor referred you."></textarea>
-          <button class="btn btn-primary" type="submit">Request a call back <span class="arr">→</span></button>
-          <p style="font-size:12.5px;color:var(--ink-soft);margin-top:14px;text-align:center">Your details go only to the clinic team.</p>
+          <div class="field"><label for="rs">What's going on</label><textarea id="rs" rows="3"></textarea></div>
+          <button class="btn btn-dark" type="submit">Request a call back <span class="circ">→</span></button>
+          <p class="note">Your details go only to the clinic team.</p>
         </div>
-        <div class="form-done">
-          <div style="width:70px;height:70px;border-radius:50%;background:var(--sage);display:grid;place-items:center;margin:0 auto 20px"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1B2A41" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg></div>
-          <h3>Got it. We'll call you soon.</h3>
-          <p style="color:var(--ink-soft);margin-top:10px">Usually within one working day.</p>
+        <div class="done">
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="31" stroke="#14202E"/><circle cx="32" cy="32" r="26" stroke="#C4613F" stroke-dasharray="3 3.5"/><path d="M22 33l7 7 13-15" stroke="#14202E" stroke-width="1.6"/></svg>
+          <h3>Thank you. We'll call you soon.</h3>
+          <p style="color:var(--ink-2)">Usually within one working day.</p>
         </div>
       </form>
     </div>
@@ -444,58 +531,92 @@ footer{padding:70px 0 40px;font-size:14px;color:var(--ink-soft)}
 
 <footer>
   <div class="wrap">
-    <div class="big-sign">Small patients.<br><em>Steady</em> hands.</div>
-    <div class="foot">
-      <span>© 2026 Dr. Asha Varma · Paediatric Surgeon · Kochi</span>
-      <span>Information on this site is general and isn't a substitute for a consultation.</span>
+    <div class="f-top">
+      <div><span class="label">Dr. Asha Varma</span><h3>Paediatric and newborn surgery, explained twice.</h3></div>
+      <div><span class="label">Visit</span><p>Clinic address line</p><p>Kochi, Kerala</p><a href="tel:+910000000000">+91 00000 00000</a></div>
+      <div><span class="label">Pages</span><a href="#care">Care</a><a href="#journey">Surgery day</a><a href="#about">About</a><a href="#book">Book a consultation</a></div>
     </div>
+    <div class="wordmark">Steady <em>hands.</em></div>
+    <div class="f-bot"><span>© 2026 Dr. Asha Varma</span><span>General information only. Not a substitute for a consultation.</span></div>
   </div>
 </footer>
 
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
 <script>
-// Show the real image/video when it exists, keep the styled placeholder when it doesn't
-document.querySelectorAll('.slot img').forEach(img=>{
-  const ok=()=>img.closest('.slot').classList.add('loaded');
-  const bad=()=>img.remove();
-  if(img.complete){img.naturalWidth?ok():bad()}else{img.addEventListener('load',ok);img.addEventListener('error',bad)}
-});
-const vid=document.getElementById('filmVid');
-vid.addEventListener('error',()=>{},true);
-
-// Nav background on scroll + mobile menu
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const nav=document.getElementById('nav');
-addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20),{passive:true});
-document.getElementById('burger').onclick=()=>nav.classList.toggle('open');
-document.querySelectorAll('.nav-links a').forEach(a=>a.onclick=()=>nav.classList.remove('open'));
 
-// Reveal on scroll
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
-document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=el.style.transitionDelay||((i%4)*0.08)+'s';io.observe(el)});
-
-// Stitch line sews itself as you scroll
-const stitch=document.getElementById('stitch');
-const stitchTick=()=>{
-  const max=document.documentElement.scrollHeight-innerHeight;
-  const p=Math.min(1,Math.max(0,(scrollY+innerHeight*.5)/(max+innerHeight*.5)));
-  stitch.style.clipPath='inset(0 0 '+((1-p)*100).toFixed(2)+'% 0)';
-};
-addEventListener('scroll',stitchTick,{passive:true});stitchTick();
-
-// FAQ accordion
-document.querySelectorAll('.faq-q').forEach(q=>q.onclick=()=>{
-  const it=q.parentElement,open=it.classList.contains('open');
-  document.querySelectorAll('.faq-item').forEach(x=>x.classList.remove('open'));
-  if(!open)it.classList.add('open');
+// Images: show the real file if it exists, else keep the placeholder
+document.querySelectorAll('.slot img').forEach(img=>{
+  const ok=()=>img.closest('.slot').classList.add('loaded'),bad=()=>img.remove();
+  if(img.complete){img.naturalWidth?ok():bad()}else{img.onload=ok;img.onerror=bad}
 });
-document.querySelector('.faq-item').classList.add('open');
 
-// Film: play if the video file exists
-document.getElementById('film').onclick=()=>{
-  if(vid.readyState===0)vid.load();
-  vid.controls=true;vid.play().then(()=>document.querySelector('.play').style.display='none').catch(()=>{});
-};
+// Smooth scroll on desktop; native scroll if the library can't load
+let lenis=null;
+if(window.Lenis&&!reduce){lenis=new Lenis({lerp:.09});const raf=t=>{lenis.raf(t);requestAnimationFrame(raf)};requestAnimationFrame(raf)}
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+  const t=document.querySelector(a.getAttribute('href'));if(!t)return;e.preventDefault();
+  nav.classList.remove('open');document.getElementById('burger').textContent='Menu';
+  lenis?lenis.scrollTo(t,{offset:-20}):t.scrollIntoView({behavior:'smooth'});
+}));
 
-// Demo form (no backend yet)
+// Loader, then hero entrance
+const loader=document.getElementById('loader');let started=false;
+const start=()=>{if(started)return;started=true;loader.classList.add('done');
+  document.querySelectorAll('.hero .fade,.hero .l').forEach((el,i)=>setTimeout(()=>el.classList.add('in'),250+i*90))};
+reduce?start():addEventListener('load',()=>setTimeout(start,700));
+setTimeout(start,3000);
+
+// Nav: hide on scroll down, show on scroll up
+let lastY=0;
+addEventListener('scroll',()=>{const y=scrollY;nav.classList.toggle('solid',y>40);
+  nav.classList.toggle('hide',y>lastY&&y>300&&!nav.classList.contains('open'));lastY=y;tick()},{passive:true});
+document.getElementById('burger').onclick=()=>{nav.classList.toggle('open');document.getElementById('burger').textContent=nav.classList.contains('open')?'Close':'Menu'};
+
+// Reveals
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+document.querySelectorAll('.fade,.l,#film,#sig').forEach(el=>{if(!el.closest('.hero'))io.observe(el)});
+
+// Counters
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);
+  const el=e.target,end=+el.dataset.count,suf=el.dataset.suf||'',plus=end>=1000?'<sup>+</sup>':'',t0=performance.now(),d=1800;
+  const step=t=>{const p=Math.min(1,(t-t0)/d),v=Math.round(end*(1-Math.pow(1-p,4)));el.innerHTML=v.toLocaleString('en-IN')+suf+(p===1?plus:'');if(p<1)requestAnimationFrame(step)};
+  requestAnimationFrame(step)}),{threshold:.6});
+document.querySelectorAll('[data-count]').forEach(el=>co.observe(el));
+
+// Philosophy text lights up word by word as you scroll
+const scrub=document.getElementById('scrub');
+scrub.innerHTML=scrub.innerHTML.replace(/(<em>.*?<\/em>)|([^\s<]+)/g,m=>`<span class="w">${m}</span>`);
+const words=[...scrub.querySelectorAll('.w')];
+
+// Journey steps, progress bar, stitch line
+const steps=[...document.querySelectorAll('.step')],jprog=document.getElementById('jprog'),stepsBox=document.getElementById('steps'),stitch=document.getElementById('stitch');
+function tick(){
+  const vh=innerHeight;
+  let r=scrub.getBoundingClientRect();const p=Math.min(1,Math.max(0,(vh*.85-r.top)/(r.height+vh*.35)));
+  const on=Math.floor(p*words.length*1.05);words.forEach((w,i)=>w.classList.toggle('on',i<on));
+  steps.forEach(s=>s.classList.toggle('on',s.getBoundingClientRect().top<vh*.6));
+  r=stepsBox.getBoundingClientRect();jprog.style.width=Math.min(100,Math.max(0,(vh*.6-r.top)/r.height*100))+'%';
+  const max=document.documentElement.scrollHeight-vh,sp=Math.min(1,(scrollY+vh*.5)/(max+vh*.5));
+  stitch.style.clipPath=`inset(0 0 ${((1-sp)*100).toFixed(2)}% 0)`;
+}
+tick();addEventListener('resize',tick);
+
+// Magnetic buttons (mouse only)
+if(matchMedia('(pointer:fine)').matches&&!reduce)document.querySelectorAll('.mag').forEach(b=>{
+  b.addEventListener('mousemove',e=>{const r=b.getBoundingClientRect();b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.18}px,${(e.clientY-r.top-r.height/2)*.3}px)`});
+  b.addEventListener('mouseleave',()=>b.style.transform='');
+});
+
+// FAQ
+document.querySelectorAll('.faq-q').forEach(q=>q.onclick=()=>{const it=q.parentElement,o=it.classList.contains('open');document.querySelectorAll('.faq-item').forEach(x=>x.classList.remove('open'));if(!o)it.classList.add('open')});
+
+// Film
+const vid=document.getElementById('vid');
+document.getElementById('film').onclick=()=>{vid.load();vid.controls=true;vid.play().then(()=>document.getElementById('filmOv').style.display='none').catch(()=>{})};
+
+// Demo form
 document.getElementById('form').onsubmit=e=>{e.preventDefault();e.target.classList.add('sent')};
 </script>
 </body>
