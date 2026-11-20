@@ -1,6 +1,6 @@
 # Image and video prompts
 
-Save each file in an `assets/` folder next to `index.html`, with the exact filename below. The site swaps the placeholder for your file on its own. No code changes needed.
+Save each file in an `assets/` folder next to `index.html`, with the exact filename below. Images now load as .webp (same name, .webp ending). The site swaps the placeholder for your file on its own. No code changes needed.
 
 Works in Google AI Studio (Imagen / Veo), Midjourney, or any image/video tool.
 
